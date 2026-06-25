@@ -42,7 +42,7 @@ export default function Footer() {
         },
     ];
     return <>
-        <div className="flex px-15 flex-wrap w-full justify-between items-center gap-8 bg-gray-100 h-full" >
+        <div className="flex pb-12 px-15 flex-wrap w-full justify-between items-center gap-8 bg-gray-100 h-full" >
 
             {/* Head  */}
             <div className="flex w-full flex-col justify-center items-start">
@@ -59,7 +59,7 @@ export default function Footer() {
 
             {/* List  */}
 
-            <section className="relative bg-gray-100 pb-20">
+            <section className="relative bg-gray-100">
                 <div className="mx-auto max-w-7xl px-4">
                     <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
                         {brands.map((brand) => (

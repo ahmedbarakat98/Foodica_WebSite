@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* <div className="h-10 w-1 rounded-full bg-[#C9A227]" /> */}
           <div>
             <Image
-              src= {foodica}
+              src={foodica}
               alt="Foodica Logo"
               width={200}
               height={200}
@@ -49,33 +49,37 @@ export default function Navbar() {
         </nav>
 
         <button className="hidden items-center justify-center gap-8 lg:flex rounded-lg bg-[#C9A227] px-5 py-3 font-medium text-black transition hover:bg-[#d4af37]">
-            Get In Touch
-          </button>
+          Get In Touch
+        </button>
 
         {/* Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-white md:hidden"
+          className="text-white text-2xl md:hidden"
         >
-          <Menu />
+          {isOpen ? "✕" : "☰"}
         </button>
       </div>
 
-      {isOpen && (
-        <div className="border-t border-yellow-700/20 bg-black md:hidden">
-          <div className="flex flex-col p-6">
-            {links.map((link) => (
-              <Link
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                className="py-3 text-gray-300 "
-              >
-                {link}
-              </Link>
-            ))}
-          </div>
+      <div
+        className={`overflow-hidden border-t border-black/60 bg-black/40 transition-all duration-500 ease-in-out md:hidden ${isOpen
+          ? "max-h-96 opacity-100"
+          : "max-h-0 opacity-0 border-t-0"
+          }`}
+      >
+        <div className="flex flex-col p-6">
+          {links.map((link) => (
+            <Link
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="py-3 text-gray-300 transition-colors duration-300 hover:text-[#C9A227]"
+              onClick={() => setIsOpen(false)}
+            >
+              {link}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </header>
   );
 }

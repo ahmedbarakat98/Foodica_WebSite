@@ -66,19 +66,18 @@ export default function Home() {
       {/* Pattern */}
 
 
-      <div
-        className="relative z-10 mx-auto w-full px-6">
+      <div className="relative z-10 mx-auto flex min-h-screen w-full flex-col">
         <Image
           src={bg}
-          alt={"background"}
-          height={2000}
-          width={2000}
-          className="absolute inset-0 -z-10 sm:h-140 lg:h-screen h-150 w-full object-cover"
+          alt="background"
+          fill
+          priority
+          className="object-cover -z-10"
         />
-        <div className="max-w-3xl px-10">
 
-
-          <h1 className="mb-8 text-5xl pt-30 font-bold leading-tight text-white md:text-5xl">
+        {/* Hero Content */}
+        <div className="max-w-3xl px-10 pt-30">
+          <h1 className="mb-8 text-5xl font-bold leading-tight text-white md:text-5xl">
             Delivering
             <span className="block text-[#C9A227]">
               Quality Taste
@@ -87,73 +86,94 @@ export default function Home() {
           </h1>
 
           <p className="mb-10 max-w-2xl text-lg leading-relaxed text-gray-400">
-            Foodica Trading & Distribution is a leading Egyptian
-            company specializing in importing, manufacturing and
-            distributing premium FMCG and food products through
-            a nationwide logistics network.
+            Foodica Trading & Distribution is a leading Egyptian company
+            specializing in importing, manufacturing and distributing
+            premium FMCG and food products through a nationwide logistics
+            network.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
-
-            <button className="flex items-center gap-2 rounded-lg bg-[#C9A227] px-8 py-4 font-semibold text-black transition hover:bg-[#d4af37]">
-              Explore Brands
-              <ArrowRight size={18} />
-            </button>
-
-          </div>
+          <button className="mb-10 flex items-center gap-2 rounded-lg bg-[#C9A227] px-8 py-4 font-semibold text-black transition hover:bg-[#d4af37]">
+            Explore Brands
+            <ArrowRight size={18} />
+          </button>
         </div>
 
         {/* Stats */}
+        <div className="mt-auto w-full bg-black/70 backdrop-blur-sm">
+          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 py-10 md:grid-cols-4">
 
-        <div className="flex flex-wrap md:px-30 pb-6 px-10 pt-6 w-full justify-between items-center gap-8 bg-black h-full" >
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex items-center gap-2">
-              <CalendarDays className="text-[#C9A227]" size={28} />
-              <h3 className="text-4xl font-bold text-[#C9A227]">
-                <CountUp end={15} duration={4} />+
-              </h3>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center gap-2">
+                <CalendarDays className="text-[#C9A227]" size={28} />
+                <h3 className="text-4xl font-bold text-[#C9A227]">
+                  <CountUp
+                    end={15}
+                    duration={4}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                  +
+                </h3>
+              </div>
+              <p className="mt-2 text-lg text-white">
+                Years Experience
+              </p>
             </div>
-            <p className="mt-2 text-lg text-white">
-              Years Experience
-            </p>
-          </div>
 
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex items-center gap-2">
-              <Users className="text-[#C9A227]" size={28} />
-              <h3 className="text-4xl font-bold text-[#C9A227]">
-                <CountUp end={150} duration={4} />+
-              </h3>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center gap-2">
+                <Users className="text-[#C9A227]" size={28} />
+                <h3 className="text-4xl font-bold text-[#C9A227]">
+                  <CountUp
+                    end={150}
+                    duration={4}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                  +
+                </h3>
+              </div>
+              <p className="mt-2 text-lg text-white">
+                Employees
+              </p>
             </div>
-            <p className="mt-2 text-lg text-white">
-              Employees
-            </p>
-          </div>
 
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex items-center gap-2">
-              <Store className="text-[#C9A227]" size={28} />
-              <h3 className="text-4xl font-bold text-[#C9A227]">
-                <CountUp end={1500} duration={4} />+
-              </h3>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center gap-2">
+                <Store className="text-[#C9A227]" size={28} />
+                <h3 className="text-4xl font-bold text-[#C9A227]">
+                  <CountUp
+                    end={1500}
+                    duration={4}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                  +
+                </h3>
+              </div>
+              <p className="mt-2 text-lg text-white">
+                Retail Outlets
+              </p>
             </div>
-            <p className="mt-2 text-lg text-white">
-              Retail Outlets
-            </p>
-          </div>
 
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex items-center gap-2">
-              <MapPinned className="text-[#C9A227]" size={28} />
-              <h3 className="text-4xl font-bold text-[#C9A227]">
-                <CountUp end={27} duration={4} />
-              </h3>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center gap-2">
+                <MapPinned className="text-[#C9A227]" size={28} />
+                <h3 className="text-4xl font-bold text-[#C9A227]">
+                  <CountUp
+                    end={27}
+                    duration={4}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                </h3>
+              </div>
+              <p className="mt-2 text-lg text-white">
+                Governorates
+              </p>
             </div>
-            <p className="mt-2 text-lg text-white">
-              Governorates
-            </p>
-          </div>
 
+          </div>
         </div>
       </div>
 
@@ -314,7 +334,7 @@ export default function Home() {
           </div>
 
           {/* Partners */}
-          
+
           <div className="mt-24">
 
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#C9A227]">
