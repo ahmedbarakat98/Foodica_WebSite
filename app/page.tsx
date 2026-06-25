@@ -1,65 +1,366 @@
+"use client";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import Navbar from "./components/Navbar";
+import bg from "../public/home bg.png";
+import CountUp from "react-countup";
+import egy from "../public/egy.png";
+import {
+  ShieldCheck,
+  Truck,
+  Handshake,
+  TrendingUp,
+  UserRound,
+} from "lucide-react";
+import {
+  CalendarDays,
+  Users,
+  Store,
+  MapPinned,
+} from "lucide-react";
+import Footer from "./components/Footer";
+import Products from "./components/Products";
 
 export default function Home() {
+
+  const features = [
+    {
+      icon: ShieldCheck,
+      title: "Trusted Quality",
+      description:
+        "We partner with the best brands to deliver superior quality products.",
+    },
+    {
+      icon: Truck,
+      title: "Strong Distribution",
+      description:
+        "Nationwide coverage with an efficient and reliable logistics network.",
+    },
+    {
+      icon: Handshake,
+      title: "Long Term Partnerships",
+      description:
+        "We build strong and lasting relationships with our partners and clients.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Market Expertise",
+      description:
+        "Deep understanding of the Egyptian market and consumer needs.",
+    },
+    {
+      icon: UserRound,
+      title: "Dedicated Team",
+      description:
+        "Our experienced team is committed to your continuous success.",
+    },
+  ];
+
+
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+
+    <section className="relative flex-col flex min-h-screen items-center overflow-hidden bg-black">
+      <Navbar />
+
+      {/* Pattern */}
+
+
+      <div
+        className="relative z-10 mx-auto w-full px-6">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          src={bg}
+          alt={"background"}
+          height={2000}
+          width={2000}
+          className="absolute inset-0 -z-10 sm:h-140 lg:h-screen h-150 w-full object-cover"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+        <div className="max-w-3xl px-10">
+
+
+          <h1 className="mb-8 text-5xl pt-30 font-bold leading-tight text-white md:text-5xl">
+            Delivering
+            <span className="block text-[#C9A227]">
+              Quality Taste
+            </span>
+            Across Egypt
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mb-10 max-w-2xl text-lg leading-relaxed text-gray-400">
+            Foodica Trading & Distribution is a leading Egyptian
+            company specializing in importing, manufacturing and
+            distributing premium FMCG and food products through
+            a nationwide logistics network.
           </p>
+
+          <div className="flex flex-wrap gap-4 mb-10">
+
+            <button className="flex items-center gap-2 rounded-lg bg-[#C9A227] px-8 py-4 font-semibold text-black transition hover:bg-[#d4af37]">
+              Explore Brands
+              <ArrowRight size={18} />
+            </button>
+
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Stats */}
+
+        <div className="flex flex-wrap md:px-30 pb-6 px-10 pt-6 w-full justify-between items-center gap-8 bg-black h-full" >
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex items-center gap-2">
+              <CalendarDays className="text-[#C9A227]" size={28} />
+              <h3 className="text-4xl font-bold text-[#C9A227]">
+                <CountUp end={15} duration={4} />+
+              </h3>
+            </div>
+            <p className="mt-2 text-lg text-white">
+              Years Experience
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex items-center gap-2">
+              <Users className="text-[#C9A227]" size={28} />
+              <h3 className="text-4xl font-bold text-[#C9A227]">
+                <CountUp end={150} duration={4} />+
+              </h3>
+            </div>
+            <p className="mt-2 text-lg text-white">
+              Employees
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex items-center gap-2">
+              <Store className="text-[#C9A227]" size={28} />
+              <h3 className="text-4xl font-bold text-[#C9A227]">
+                <CountUp end={1500} duration={4} />+
+              </h3>
+            </div>
+            <p className="mt-2 text-lg text-white">
+              Retail Outlets
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex items-center gap-2">
+              <MapPinned className="text-[#C9A227]" size={28} />
+              <h3 className="text-4xl font-bold text-[#C9A227]">
+                <CountUp end={27} duration={4} />
+              </h3>
+            </div>
+            <p className="mt-2 text-lg text-white">
+              Governorates
+            </p>
+          </div>
+
         </div>
-      </main>
-    </div>
+      </div>
+
+      {/* Products  */}
+      <Products />
+
+      {/* why choose us  */}
+      <section className="relative overflow-hidden bg-black px-15 py-10">
+        {/* Background Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{
+            backgroundImage: "url('/wheat.jpeg')",
+          }}
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-6">
+          <h6 className="text-2xl font-semibold uppercase tracking-wider text-[#C9A227]">
+            Why Choose Us
+          </h6>
+          <h3 className="pt-2 mb-10 text-3xl font-bold text-white md:text-4xl">
+            Your Reliable Distribution Partner
+          </h3>
+
+          <div className="grid gap-8 md:grid-cols-5">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+
+              return (
+                <div
+                  key={index}
+                  className="relative text-center"
+                >
+
+                  <div className="mb-2 flex justify-center">
+                    <Icon
+                      size={48}
+                      className="text-[#C9A227]"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+
+                  <h3 className="mb-4 text-md font-bold text-white">
+                    {feature.title}
+                  </h3>
+
+                  <p className="leading-8 text-sm px-2 text-gray-300">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* last section  */}
+
+      <section className="bg-[#faf7f1] py-20 px-15">
+        <div className="mx-auto max-w-7xl px-6">
+
+          {/* Top Section */}
+          <div className="grid gap-12 lg:grid-cols-3 items-center">
+
+            {/* Left */}
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#C9A227]">
+                Nationwide Distribution
+              </p>
+
+              <h2 className="mb-6 text-4xl font-bold text-[#1f1f1f]">
+                We Cover All of Egypt
+              </h2>
+
+              <p className="mb-8 text-gray-600 leading-8">
+                Our strong logistics network ensures our products
+                reach every corner of Egypt efficiently and on time.
+              </p>
+
+              <ul className="space-y-5">
+                {[
+                  "Wide coverage across 27 governorates",
+                  "Modern fleet & logistics solutions",
+                  "Serving both modern and traditional trade",
+                  "Flexible and reliable delivery",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-full border border-[#C9A227]">
+                      ✓
+                    </div>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Egypt Map */}
+            <div className="flex justify-center">
+              <Image
+                src={egy}
+                alt="Egypt Map"
+                className="max-h-[450px] object-contain"
+              />
+            </div>
+
+            {/* Channels */}
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#C9A227]">
+                Our Channels
+              </p>
+
+              <h2 className="mb-8 text-4xl font-bold text-[#1f1f1f]">
+                Multiple Channels, One Goal
+              </h2>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+
+                {[
+                  {
+                    title: "Modern Trade",
+                    desc: "Hypermarkets & Supermarkets",
+                    icon: "🛒",
+                  },
+                  {
+                    title: "Traditional Trade",
+                    desc: "Retail Stores & Wholesalers",
+                    icon: "🏪",
+                  },
+                  {
+                    title: "E-Commerce",
+                    desc: "Online Platforms & Marketplaces",
+                    icon: "🖥️",
+                  },
+                  {
+                    title: "Food Service",
+                    desc: "Hotels, Restaurants & Cafés",
+                    icon: "🍽️",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="rounded-3xl bg-white p-6 shadow-sm transition flex flex-col justify-center items-center  hover:shadow-lg"
+                  >
+                    <div className="mb-4 text-2xl text-[#C9A227]">
+                      {item.icon}
+                    </div>
+
+                    <h3 className="mb-2 text-sm text-center font-bold">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-sm text-center text-gray-600">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Partners */}
+          
+          <div className="mt-24">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#C9A227]">
+              Our Partners
+            </p>
+
+            <h2 className="mb-10 text-4xl font-bold text-[#1f1f1f]">
+              Proud to Work With
+            </h2>
+
+            <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+
+              {[
+                "/partners/saudi.png",
+                "/partners/carrefour.png",
+                "/partners/spinneys.png",
+                "/partners/metro.png",
+                "/partners/zahran.png",
+                "/partners/fathalla.png",
+              ].map((logo, index) => (
+                <div
+                  key={index}
+                  className="flex h-28 items-center justify-center rounded-3xl bg-white p-6 shadow-sm"
+                >
+                  <img
+                    src={logo}
+                    alt="Partner"
+                    className="max-h-16 object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Footer  */}
+      <Footer />
+
+
+    </section>
   );
 }
+// ---------------------------------------------------------------
+
+
+
+
