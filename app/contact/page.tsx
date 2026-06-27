@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <main className="bg-[#0f0f0f] text-white">
+      <main className="bg-[#0f0f0f] pt-10 text-white">
 
         {/* Hero */}
 

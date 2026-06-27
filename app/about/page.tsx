@@ -7,7 +7,7 @@ export default function page() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[70vh] items-center justify-center overflow-hidden">
+      <section className="relative pt-15 flex h-[70vh] items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -116,7 +116,13 @@ export default function page() {
       <section className="bg-[#171717] py-24">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2">
 
-          <div className="rounded-2xl border border-[#D4AF37]/20 bg-[#1f1f1f] p-10">
+          <div className="rounded-2xl relative border border-[#D4AF37]/20 bg-[#1f1f1f] p-10">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-10"
+              style={{
+                backgroundImage: "url('/vision.png')",
+              }}
+            />
             <Target className="mb-6 h-12 w-12 text-[#D4AF37]" />
 
             <h3 className="mb-4 text-3xl font-bold">
@@ -130,8 +136,14 @@ export default function page() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-[#D4AF37]/20 bg-[#1f1f1f] p-10">
+          <div className="rounded-2xl border relative border-[#D4AF37]/20 bg-[#1f1f1f] p-10">
             <Globe2 className="mb-6 h-12 w-12 text-[#D4AF37]" />
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-10"
+              style={{
+                backgroundImage: "url('/mission.png')",
+              }}
+            />
 
             <h3 className="mb-4 text-3xl font-bold">
               Our Vision
