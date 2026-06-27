@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Menu } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import foodica from "@/public/LogoH.png";
+import foodica from "@/public/logo white.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +39,7 @@ export default function Navbar() {
           {links.map((link) => (
             <Link
               key={link}
-              href={`#${link.toLowerCase()}`}
+              href={`/${link.toLowerCase()}`}
               className="text-sm text-gray-300 transition hover:text-[#C9A227]"
             >
               {link}

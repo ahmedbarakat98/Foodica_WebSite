@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar";
-import bg from "../public/home bg.png";
+import bg from "../public/new bg.png";
 import CountUp from "react-countup";
 import egy from "../public/egy.png";
 import {
@@ -184,7 +184,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-black px-15 py-10">
         {/* Background Overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+          className="absolute inset-0 bg-cover bg-center opacity-8"
           style={{
             backgroundImage: "url('/wheat.jpeg')",
           }}

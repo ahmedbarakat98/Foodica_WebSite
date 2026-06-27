@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/public/LogoH.png";
+import logo from "@/public/logo white.png";
 import {
   Camera,
   MapPin,
