@@ -202,9 +202,9 @@ export default function page() {
             </p>
           </div>
 
-          <button className="rounded-xl bg-black px-8 py-4 text-lg font-semibold text-white transition hover:scale-105">
+          <a href="/contact" className="rounded-xl bg-black px-8 py-4 text-lg font-semibold text-white transition hover:scale-105">
             Contact Us
-          </button>
+          </a>
         </div>
       </section>
     </main>

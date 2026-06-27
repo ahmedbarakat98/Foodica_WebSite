@@ -22,7 +22,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Foodica Plus",
   description: "Foodica Trading & Distribution Ltd. Co.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
 
 export default function RootLayout({
   children,

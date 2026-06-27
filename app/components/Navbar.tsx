@@ -22,7 +22,6 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 pb-2">
-          {/* <div className="h-10 w-1 rounded-full bg-[#C9A227]" /> */}
           <div>
             <Image
               src={foodica}

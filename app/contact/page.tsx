@@ -46,7 +46,7 @@ export default function ContactPage() {
 
             {/* Left */}
 
-            <div>
+            <div className="space-y-8 ps-20 pt-10">
 
               <h2 className="mb-10 text-4xl font-bold">
                 Get In Touch
@@ -103,7 +103,7 @@ export default function ContactPage() {
 
             {/* Form */}
 
-            <form className="space-y-6 rounded-3xl bg-[#171717] p-10">
+            <form className="space-y-2 rounded-3xl bg-[#171717] p-10">
 
               <div>
                 <label className="mb-2 block">Full Name</label>

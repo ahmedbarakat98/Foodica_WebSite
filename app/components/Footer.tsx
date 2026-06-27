@@ -36,11 +36,11 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-4 text-center text-gray-300">
-              <li><a href="#">Our Brands</a></li>
-              <li><a href="#">Distribution</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/brands">Our Brands</a></li>
+              <li><a href="/distribution">Distribution</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="/partners">Partners</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
 

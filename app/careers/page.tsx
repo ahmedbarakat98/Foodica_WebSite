@@ -228,9 +228,12 @@ export default function CareersPage() {
               FMCG distribution companies.
             </p>
 
-            <button className="mt-10 rounded-xl bg-black px-8 py-4 text-lg font-semibold text-white transition hover:scale-105">
+            <a
+              href="mailto:careers@foodicaplus.com?subject=Job Application"
+              className="mt-10 inline-block rounded-xl bg-black px-8 py-4 text-lg font-semibold text-white transition hover:scale-105"
+            >
               careers@foodicaplus.com
-            </button>
+            </a>
 
           </div>
 

@@ -20,7 +20,7 @@ export default function Loader() {
     <div className="loader-container">
       <div className="text-center">
         <Image
-          src="/icon.ico"
+          src="/logo white.png"
           alt="Foodica Logo"
           width={150}
           height={150}
