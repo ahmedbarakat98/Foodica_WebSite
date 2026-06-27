@@ -70,7 +70,7 @@ export default function Navbar() {
           {links.map((link) => (
             <Link
               key={link}
-              href={`#${link.toLowerCase()}`}
+              href={`/${link.toLowerCase()}`}
               className="py-3 text-gray-300 transition-colors duration-300 hover:text-[#C9A227]"
               onClick={() => setIsOpen(false)}
             >
