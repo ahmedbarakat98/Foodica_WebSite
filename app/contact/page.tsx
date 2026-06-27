@@ -165,9 +165,14 @@ export default function ContactPage() {
           <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl">
 
             <iframe
-              src="https://www.google.com/maps?q=Cairo,Egypt&output=embed"
-              className="h-[500px] w-full border-0"
+              src="https://www.google.com/maps?q=30.06056615829459,31.059902788353153&t=k&z=19&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              className="rounded-2xl"
             />
 
           </div>
