@@ -165,10 +165,10 @@ export default function ContactPage() {
           <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl">
 
             <iframe
-              src="https://www.google.com/maps?q=30.06056615829459,31.059902788353153&t=k&z=19&output=embed"
+              src="https://www.google.com/maps?q=30.007189762454345,31.530577157262673&t=k&z=19&output=embed"
               width="100%"
               height="450"
-              style={{ border: 0 }}
+              style={{ border: 2 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"

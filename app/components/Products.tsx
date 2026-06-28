@@ -1,9 +1,8 @@
 "use client";
-import bg from "@/public/home bg.png";
-import CountUp from "react-countup";
-import Alameed from "@/public/ameed.png";
-import egy from "@/public/egy.png";
-import cola from "@/public/cola.png";
+import Alameed from "@/public/coffe.png";
+import pu from "@/public/pu.png";
+import nut from "@/public/Nut.png";
+import cola from "@/public/vcola.png";
 import Image from "next/image";
 import {
     Camera,
@@ -16,29 +15,24 @@ export default function Footer() {
 
     const brands = [
         {
-            title: "بن العميد",
+            title: "ُEl Ameed",
             description: "The authentic taste of Arabic coffee since 1960.",
             image: Alameed,
         },
         {
             title: "Nutty",
             description: "A wide range of nuts and roasted snacks.",
-            image: "/brands/nutty.webp",
-        },
-        {
-            title: "Bakalland",
-            description: "Healthy choices for a better lifestyle.",
-            image: "/brands/bakalland.webp",
-        },
-        {
-            title: "Mc Sauce",
-            description: "Delicious sauces for every taste and every meal.",
-            image: "/brands/mcsauce.webp",
+            image: nut,
         },
         {
             title: "V7",
             description: "Refreshing drinks for every moment.",
             image: cola,
+        },
+        {
+            title: "Puvana",
+            description: "Refreshing drinks for every moment.",
+            image: pu,
         },
     ];
     return <>
@@ -61,18 +55,18 @@ export default function Footer() {
 
             <section className="relative bg-gray-100">
                 <div className="mx-auto max-w-7xl px-4">
-                    <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
+                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         {brands.map((brand) => (
                             <div
                                 key={brand.title}
-                                className="group overflow-hidden rounded-[24px] bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                                className="group  rounded-[24px] bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                             >
                                 <div className="relative h-[200px]">
                                     <Image
                                         src={brand.image}
                                         alt={brand.title}
                                         fill
-                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        className="object-contain transition-transform duration-500 group-hover:scale-125"
                                     />
                                 </div>
 

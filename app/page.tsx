@@ -274,7 +274,7 @@ export default function Home() {
               <Image
                 src={egy}
                 alt="Egypt Map"
-                className="max-h-[450px] object-contain"
+                className="max-h-[450px] transition-all duration-300 hover:scale-110 hover:-translate-y-2 object-contain"
               />
             </div>
 

@@ -51,7 +51,7 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-4 text-center text-gray-300">
-              <li>بن العميد</li>
+              <li>El Ameed</li>
               <li>Nutty</li>
               <li>Bakalland</li>
               <li>Mc Sauce</li>
