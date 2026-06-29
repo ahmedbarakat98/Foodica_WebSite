@@ -22,8 +22,8 @@ export default function Loader() {
         <Image
           src="/logo white.png"
           alt="Foodica Logo"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           className="animate-heartbeat"
           priority
         />

@@ -67,12 +67,10 @@ export default function Footer() {
 
             <div className="space-y-6 items-center justify-center text-center text-gray-300">
               
-              <div className="flex gap-3">
+              <div className="flex items-center justify-center gap-3">
                 <MapPin className="text-[#C9A227]" size={20} />
                 <p>
-                  5th Settlement, New Cairo,
-                  <br />
-                  Cairo, Egypt
+                  5th Settlement, New Cairo, Egypt
                 </p>
               </div>
 
@@ -111,7 +109,9 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-6">
-              <a>Created By IT Department</a>
+              <a href="https://barakat-website.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C9A227] transition-colors duration-300">
+                Created By Ahmed Barakat
+              </a>
             </div>
           </div>
         </div>
