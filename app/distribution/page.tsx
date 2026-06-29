@@ -57,7 +57,7 @@ export default function DistributionPage() {
 
         {/* Hero */}
 
-        <section className="relative pt-20 flex h-[60vh] items-center justify-center overflow-hidden">
+        <section className="relative pt-15 flex h-[70vh] items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{

@@ -39,8 +39,14 @@ export default function BrandsPage() {
 
         {/* Hero */}
 
-        <section className="relative flex h-[55vh] pt-20 items-center justify-center">
-          <div className="absolute inset-0 bg-[url('/brands-bg.jpg')] bg-cover bg-center" />
+        <section className="relative flex h-[65vh] pt-30 items-center justify-center">
+          <Image
+          width={200}
+          height={200}
+          alt = "Brands Hero"
+          className="absolute z-10 -bottom-20"
+          src="/vcolaat.png" />
+
           <div className="absolute inset-0 bg-black/70" />
 
           <div className="relative z-10 text-center">
