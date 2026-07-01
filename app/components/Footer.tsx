@@ -68,10 +68,10 @@ export default function Footer() {
             <div className="space-y-6 items-center justify-center text-center text-gray-300">
               
               <div className="flex items-center justify-center gap-3">
-                <MapPin className="text-[#C9A227]" size={20} />
-                <p>
+                <MapPin className="text-[#C9A227]" size={30} />
+                <a href="https://maps.app.goo.gl/stU187NP8YKZtU4K7" className="hover:text-[#C9A227] transition-colors duration-300" target="_blank" rel="noopener noreferrer">
                   5th Settlement, New Cairo, Egypt
-                </p>
+                </a>
               </div>
 
               <div className="flex items-center justify-center gap-3">

@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import foodica from "@/public/logo white.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const links = [
     "About",
@@ -35,15 +37,21 @@ export default function Navbar() {
 
         {/* Desktop */}
         <nav className="hidden items-center justify-center gap-8 md:flex">
-          {links.map((link) => (
-            <Link
-              key={link}
-              href={`/${link.toLowerCase()}`}
-              className="text-sm text-gray-300 transition hover:text-[#C9A227]"
-            >
-              {link}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const href = `/${link.toLowerCase()}`;
+            const isActive = pathname === href;
+            return (
+              <Link
+                key={link}
+                href={href}
+                className={`text-sm transition ${
+                  isActive ? "text-[#C9A227]" : "text-gray-300 hover:text-[#C9A227]"
+                }`}
+              >
+                {link}
+              </Link>
+            );
+          })}
         </nav>
 
         <button className="hidden items-center justify-center gap-8 lg:flex rounded-lg bg-[#C9A227] px-5 py-3 font-medium text-black transition hover:bg-[#d4af37]">
@@ -60,22 +68,27 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`overflow-hidden border-t border-black/60 bg-black/40 transition-all duration-500 ease-in-out md:hidden ${isOpen
-          ? "max-h-96 opacity-100"
-          : "max-h-0 opacity-0 border-t-0"
-          }`}
+        className={`overflow-hidden border-t border-black/60 bg-black/40 transition-all duration-500 ease-in-out md:hidden ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 border-t-0"
+        }`}
       >
         <div className="flex flex-col p-6">
-          {links.map((link) => (
-            <Link
-              key={link}
-              href={`/${link.toLowerCase()}`}
-              className="py-3 text-gray-300 transition-colors duration-300 hover:text-[#C9A227]"
-              onClick={() => setIsOpen(false)}
-            >
-              {link}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const href = `/${link.toLowerCase()}`;
+            const isActive = pathname === href;
+            return (
+              <Link
+                key={link}
+                href={href}
+                className={`py-3 transition-colors duration-300 ${
+                  isActive ? "text-[#C9A227]" : "text-gray-300 hover:text-[#C9A227]"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </header>
