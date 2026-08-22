@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍔 Foodica Website
 
-## Getting Started
+<p align="center">
+  <a href="https://foodica-web-site.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Foodica-green?style=for-the-badge&logo=vercel" />
+  </a>
+</p>
 
-First, run the development server:
+<h3 align="center">
+A modern and responsive food website built with a clean UI, smooth user experience, and scalable frontend architecture.
+</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  🌐 Live Website:
+  <br>
+  https://foodica-web-site.vercel.app/
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Foodica** is a modern food website designed to provide an attractive and seamless browsing experience for food lovers.
 
-## Learn More
+The project focuses on creating a professional restaurant-style interface with modern design principles, responsive layouts, and a smooth user experience across all devices.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🏠 Modern Landing Page
+- Attractive hero section
+- Professional food presentation
+- Clear call-to-action sections
+- Clean and modern layout
 
-## Deploy on Vercel
+### 🍕 Food Showcase
+- Organized food categories
+- Product cards
+- Beautiful image presentation
+- Restaurant-style design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📱 Fully Responsive
+Optimized for:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 💻 Desktop
+- 📱 Mobile
+- 📲 Tablet
+
+### ⚡ User Experience
+- Smooth navigation
+- Interactive UI components
+- Fast loading performance
+- Modern animations
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- ⚛️ React.js
+- ▲ Next.js
+- 🟨 JavaScript
+- 🎨 Tailwind CSS
+
+### Tools & Deployment
+
+- Git
+- GitHub
+- Vercel
+
+---
+
+## 📂 Project Structure
