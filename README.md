@@ -1,4 +1,4 @@
-# 🍔 Foodica Website
+# Foodica Website
 
 <p align="center">
   <a href="https://foodica-web-site.vercel.app/">
