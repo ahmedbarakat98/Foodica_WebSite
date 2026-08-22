@@ -34,12 +34,6 @@ The project focuses on creating a professional restaurant-style interface with m
 - Clear call-to-action sections
 - Clean and modern layout
 
-### 🍕 Food Showcase
-- Organized food categories
-- Product cards
-- Beautiful image presentation
-- Restaurant-style design
-
 ### 📱 Fully Responsive
 Optimized for:
 
@@ -70,6 +64,3 @@ Optimized for:
 - GitHub
 - Vercel
 
----
-
-## 📂 Project Structure
